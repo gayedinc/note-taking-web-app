@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: -0.5px;
+  color: #0E121B;
+  padding: 20px 16px;
+}
+
+.page-component {
+  max-width: 343px;
+  margin-inline: auto;
+}
+
+header {
+  background-color: #F3F5F8;
+  padding: 13px 16px;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+}
+
+.all-notes {
+  position: relative;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 1px solid #E0E4EA;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    padding: 8px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: -0.30000001192092896px;
+    color: #0E121B;
+  }
+
+  .tags {
+    display: flex;
+    gap: 4px;
+    
+    p {
+      background-color: #E0E4EA;
+      color: #0E121B;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      letter-spacing: -0.20000000298023224px;
+      border-radius: 4px;
+      padding: 2px 6px;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    letter-spacing: -0.20000000298023224px;
+    color: #2B303B;
+  }
+
+}
+
+.new-note-icon {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+  border-radius: 999px;
+  background-color: #335CFF;
+  box-shadow: 0px 7px 11px 0px #CACFD8B2;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 10;
+}
+
+.footer-section {
+  display: flex;
+  padding: 12px 16px;
+  border-top: 1px solid #E0E4EA;
+  box-shadow: 0px -4px 6px 0px #F0F0F099;
+
+  button {
+    width: 68.6px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer-section button.selected {
+  background-color: #EBF1FF;
+  border-radius: 4px;
+}
+
+/* fill özelliği olan path'ler için */
+.footer-section button.selected svg path[fill] {
+  fill: #007BFF;
+}
+
+/* stroke özelliği olan path'ler için */
+.footer-section button.selected svg path[stroke] {
+  stroke: #007BFF;
+}
+
+.create-section {
+  height: 100vh;
+  padding-top: 20px;
+}
+
+.create-head-section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E0E4EA;
+  padding-bottom: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+  letter-spacing: -0.20000000298023224px;
+}
+
+.go-back-btn button {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  color: #525866;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.save-cancel-btns {
+  display: flex;
+  gap: 16px;
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .cancel-btn {
+    color: #525866;
+  }
+
+  .save-btn {
+    color: #335CFF;
+  }
+}
+
+.tags-time {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #E0E4EA;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  .tags, .time {
+    display: flex;
+    justify-content: flex-start;
+
+    p {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      letter-spacing: -0.20000000298023224px;
+    }
+  }
+
+  .tags-icon, .time-icon {
+    display: flex;
+    gap: 6px;
+    width: 115px;
+
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .time-text {
+    p {
+      color: #99A0AE;
+    }
+  }
+}
+
+.tags input {
+  width: 100%;
+  resize: none;
+  outline: none;
+  border: 1px solid transparent;
+  font-size: 12px;
+  border-radius: 4px;
+  line-height: 14.4px;
+  letter-spacing: -.20000000298023224px;
+  color: #2b303b;
+}
+
+.create-title input {
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -.30000001192092896px;
+  color: #0e121b;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding-block: 8px;
+}
+
+.create-text-area textarea {
+  width: 343px;
+  height: auto;
+}
+
+/* Tablet Start */
+
+@media (width >= 768px) {
+
+}
+
+/* Desktop Start */
+
+@media (width >= 1280px) {
+
+}
