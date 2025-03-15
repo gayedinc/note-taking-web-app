@@ -32,7 +32,7 @@ export default function CreateNote() {
       <div className="create-section">
         <div className="create-head-section">
           <div className="go-back-btn">
-            <button onClick={() => location.hash = "/"}>
+            <button onClick={() => window.history.back()}>
               <img src="/img/go-back-icon.svg" alt="Go Back Icon" />
               Go Back
             </button>

@@ -1,44 +1,7 @@
 import { useEffect, useState } from "react";
-
-import Header from "./assets/components/Header.jsx";
-import AllNotes from "./assets/components/AllNotes.jsx";
-import ArchivedNotes from "./assets/components/ArchivedNotes.jsx";
-import CreateNote from "./assets/components/CreateNote.jsx";
-import Footer from "./assets/components/Footer.jsx";
-
-const routes = [
-  {
-    title: "All Notes",
-    url: "/",
-    component: <AllNotes />
-  },
-  {
-    title: "Archived Notes",
-    url: "/archive",
-    component: <ArchivedNotes />
-  },
-  {
-    url: "/create-note",
-    component: <CreateNote />,
-  },
-  // {
-  //   url: "/tags",
-  //   component: <Tags />,
-  // },
-  // {
-  //   url: "/search",
-  //   component: <Search />,
-  // },
-  // {
-  //   title: "Settings",
-  //   url: "/archive",
-  //   component: <Settings />
-  // },
-];
-
-export function getPage(url) {
-  return routes.find((x) => x.url === url) ?? null;
-}
+import { getPage } from "./helper";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 export function getUrlParam() {
   const parts = location.hash.substring(1).split('/');
